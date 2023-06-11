@@ -1,0 +1,29 @@
+CREATE TABLE Fruits (ID INTEGER PRIMARY KEY, Name TEXT, Price INTEGER, Aisle INTEGER,
+Color TEXT);
+
+
+INSERT INTO Fruits VALUES (1, "Bananas", 2, 4, "Yellow");
+INSERT INTO Fruits VALUES (2,"Anoles",  3, 4, "green");
+INSERT INTO Fruits VALUES (3, "Watermelons", 2, 10, "Red");
+INSERT INTO Fruits VALUES (4,"Strawberries", 5, 5, "Red");
+INSERT INTO Fruits VALUES (5, "Blueberries", 3, 3, "Purple");
+INSERT INTO Fruits VALUES (6, "blackberries", 6, 7, "blue");
+INSERT INTO Fruits VALUES (7, "oranges", 5, 6, "orange");
+INSERT INTO Fruits VALUES (8,"Mangoes", 10, 8, "yellow");
+INSERT INTO Fruits VALUES (9, "Pineapples", 5, 6, "Yellow");
+INSERT INTO Fruits VALUES (10, "Pears", 4, 5, "green");
+INSERT INTO Fruits VALUES (11, "Peaches", 4, 5, "orange");
+INSERT INTO Fruits VALUES (12, "Raspberries", 3, 3, "Red");
+INSERT INTO Fruits VALUES (13, "Grapes", 2, 3, "green");
+INSERT INTO Fruits VALUES (14,"Kiwi", 3, 3, "green");
+INSERT INTO Fruits VALUES (15, "Pomegranate", 5, 5, "Red");
+
+
+
+--What is the order of all the fruits by price?
+SELECT * FROM Fruits ORDER BY Price;
+
+
+
+--What is the sum from all the fruits?
+SELECT SUM(price) FROM Fruits;
